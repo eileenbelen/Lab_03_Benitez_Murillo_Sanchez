@@ -15,6 +15,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.*;
 
+import java.util.HashMap;
+
 public class MainActivity extends AppCompatActivity {
     //Variables publicas
     static final int GOOGLE_SIGN_IN = 123;
@@ -32,6 +34,23 @@ public class MainActivity extends AppCompatActivity {
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+
+        Intent intent = getIntent();
+        String msg = intent.getStringExtra("msg");
+        if(msg != null){
+            if(msg.equals("cerrarSesion")){
+                cerrarSesion();
+            }
+        }
+    }
+
+    private void cerrarSesion() {
+        mGoogleSignInClient.signOut().addOnCompleteListener(this, new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                updateUI(null);
+            }
+        });
     }
 
     public void iniciarSesion(View view) {
@@ -75,6 +94,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateUI(FirebaseUser user ) {
+        if (user != null) {
+            HashMap<String, String> info_user = new HashMap<String, String>();
+            info_user.put("user_name", user.getDisplayName());
+            info_user.put("user_email", user.getEmail());
+            info_user.put("user_photo", String.valueOf(user.getPhotoUrl()));
+            info_user.put("user_id", user.getUid());
+
+            finish();
+            Intent intent = new Intent(this, PerfilUsuario.class);
+            intent.putExtra("info_user", info_user);
+            startActivity(intent);
+        } else {
+            System.out.println("sin registrarse");
+        }
     }
 
 

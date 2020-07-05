@@ -19,13 +19,13 @@
         android:id="@+id/txt_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80"
-        android:layout_marginTop="20"
-        android:padding="20"
-        android:paddingLeft="20"
-        android:paddingTop="20"
-        android:paddingRight="20"
-        android:paddingBottom="20"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
         android:text="Inicio de Sesion con Google"
         android:textSize="18sp" />
 
@@ -33,7 +33,7 @@
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50"
+        android:layout_marginTop="50dp"
         android:text="Iniciar Sesion" />
 
 </LinearLayout>
