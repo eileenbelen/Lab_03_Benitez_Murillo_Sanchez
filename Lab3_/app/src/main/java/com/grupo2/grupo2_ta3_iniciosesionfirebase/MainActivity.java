@@ -1,4 +1,4 @@
-package com.example.grupo2_ta3_iniciosesionfirebase;
+package com.grupo2.grupo2_ta3_iniciosesionfirebase;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

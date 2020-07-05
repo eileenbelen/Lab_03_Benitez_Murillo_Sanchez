@@ -1,4 +1,4 @@
-package com.example.grupo2_ta3_iniciosesionfirebase;
+package com.grupo2.grupo2_ta3_iniciosesionfirebase;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.grupo2_ta3_iniciosesionfirebase", appContext.getPackageName());
+        assertEquals("com.grupo2.grupo2_ta3_iniciosesionfirebase", appContext.getPackageName());
     }
 }

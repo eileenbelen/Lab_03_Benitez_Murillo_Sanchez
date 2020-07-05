@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-            applicationId "com.example.grupo2_ta3_iniciosesionfirebase"
+        applicationId "com.grupo2.grupo2_ta3_iniciosesionfirebase"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -44,5 +44,3 @@ dependencies {
 }
 
 apply plugin: 'com.google.gms.google-services'
-
- 
