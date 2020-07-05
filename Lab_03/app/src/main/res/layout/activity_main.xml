@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="135dp"
+        android:layout_height="122dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200px"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_light_normal" />
+
+    <TextView
+        android:id="@+id/txt_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80"
+        android:layout_marginTop="20"
+        android:padding="20"
+        android:paddingLeft="20"
+        android:paddingTop="20"
+        android:paddingRight="20"
+        android:paddingBottom="20"
+        android:text="Inicio de Sesion con Google"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50"
+        android:text="Iniciar Sesion" />
+
+</LinearLayout>
