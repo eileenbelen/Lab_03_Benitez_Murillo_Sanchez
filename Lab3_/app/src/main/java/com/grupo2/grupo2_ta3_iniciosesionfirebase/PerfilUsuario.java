@@ -53,7 +53,7 @@ public class PerfilUsuario extends AppCompatActivity {
     }
 
     private void escribirTweets(String autor) {
-        String tweet = "hola mundo firebase 2";
+        String tweet = "Hola Mundo";
         Tweet t = new Tweet(autor,tweet);
         t.publicarTweet();
         String fecha = t.getFecha();
@@ -67,7 +67,7 @@ public class PerfilUsuario extends AppCompatActivity {
     }
 
     private void leerTweets() {
-        db_reference.child("Grupo 0").child("tweets")
+        db_reference.child("Grupo 2").child("tweets")
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
